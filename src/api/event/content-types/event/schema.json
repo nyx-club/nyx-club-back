@@ -63,6 +63,9 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "link": {
+      "type": "string"
     }
   }
 }
