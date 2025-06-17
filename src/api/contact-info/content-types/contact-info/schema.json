@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_infos",
+  "info": {
+    "singularName": "contact-info",
+    "pluralName": "contact-infos",
+    "displayName": "contact-info"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "address": {
+      "type": "component",
+      "component": "address.address",
+      "repeatable": false
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "default": "nyxclubmadrid@gmail.com"
+    },
+    "phone": {
+      "type": "string",
+      "default": "+34 602 08 30 14",
+      "required": false
+    },
+    "social": {
+      "type": "component",
+      "component": "social.social",
+      "repeatable": false
+    },
+    "openingHours": {
+      "type": "component",
+      "component": "opening-hour.opening-hour",
+      "repeatable": true
+    },
+    "closedDays": {
+      "type": "string"
+    }
+  }
+}

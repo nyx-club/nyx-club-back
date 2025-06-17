@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_opening_hour_opening_hours",
+  "info": {
+    "displayName": "opening-hour",
+    "icon": "clock"
+  },
+  "options": {},
+  "attributes": {
+    "day": {
+      "type": "enumeration",
+      "enum": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes",
+        "Sábado",
+        "Domingo"
+      ]
+    },
+    "open": {
+      "type": "string"
+    },
+    "close": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

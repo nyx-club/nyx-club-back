@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_address_addresses",
+  "info": {
+    "displayName": "address",
+    "icon": "gate"
+  },
+  "options": {},
+  "attributes": {
+    "street": {
+      "type": "string",
+      "default": "Calle de Amaniel 13",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "default": "Madrid",
+      "required": true
+    },
+    "country": {
+      "type": "string",
+      "default": "España",
+      "required": true
+    },
+    "postalCode": {
+      "type": "string",
+      "default": "28015",
+      "required": true
+    }
+  },
+  "config": {}
+}

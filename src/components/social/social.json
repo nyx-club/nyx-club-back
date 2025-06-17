@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_social_socials",
+  "info": {
+    "displayName": "social",
+    "icon": "eye"
+  },
+  "options": {},
+  "attributes": {
+    "instagram": {
+      "type": "string",
+      "default": "https://www.instagram.com/nyx_club_madrid",
+      "required": true
+    },
+    "fetlife": {
+      "type": "string",
+      "default": "https://fetlife.com/NYX_BDSM_CLUB",
+      "required": true
+    }
+  },
+  "config": {}
+}
