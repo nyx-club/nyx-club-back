@@ -428,6 +428,7 @@ export interface ApiEventEvent extends Struct.CollectionTypeSchema {
     date: Schema.Attribute.DateTime & Schema.Attribute.Required;
     description: Schema.Attribute.Blocks & Schema.Attribute.Required;
     images: Schema.Attribute.Media<'images' | 'files' | 'videos', true>;
+    link: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::event.event'> &
       Schema.Attribute.Private;
