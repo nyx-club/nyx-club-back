@@ -19,7 +19,8 @@
       ]
     },
     "open": {
-      "type": "string"
+      "type": "string",
+      "default": "20:30"
     },
     "close": {
       "type": "string"

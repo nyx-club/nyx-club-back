@@ -41,7 +41,7 @@ export interface OpeningHourOpeningHour extends Struct.ComponentSchema {
         'Domingo',
       ]
     >;
-    open: Schema.Attribute.String;
+    open: Schema.Attribute.String & Schema.Attribute.DefaultTo<'20:30'>;
   };
 }
 

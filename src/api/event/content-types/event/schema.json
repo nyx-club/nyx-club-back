@@ -27,14 +27,6 @@
       "type": "string",
       "required": true
     },
-    "category": {
-      "type": "enumeration",
-      "enum": [
-        "shibari",
-        "lecture",
-        "cineforum"
-      ]
-    },
     "capacity": {
       "type": "string"
     },
@@ -66,6 +58,12 @@
     },
     "link": {
       "type": "string"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "events"
     }
   }
 }
