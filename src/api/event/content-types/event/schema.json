@@ -64,6 +64,19 @@
       "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "events"
+    },
+    "recurrenceType": {
+      "type": "enumeration",
+      "required": true,
+      "default": "none",
+      "enum": [
+        "none",
+        "weekly",
+        "monthly"
+      ]
+    },
+    "recurrenceEndDate": {
+      "type": "date"
     }
   }
 }

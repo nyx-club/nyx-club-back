@@ -465,6 +465,12 @@ export interface ApiEventEvent extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     mainImage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     publishedAt: Schema.Attribute.DateTime;
+    recurrenceEndDate: Schema.Attribute.Date;
+    recurrenceType: Schema.Attribute.Enumeration<
+      ['none', 'weekly', 'monthly']
+    > &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'none'>;
     slug: Schema.Attribute.UID<'title'>;
     tags: Schema.Attribute.String;
     time: Schema.Attribute.String & Schema.Attribute.Required;
